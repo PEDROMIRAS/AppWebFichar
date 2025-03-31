@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="../css/dEmpleado.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Registro de Asistencia</h1>
-        <p id="status">Estado actual: Sin registro</p>
-        <button id="checkInOut" class="check-in-out">Marcar Entrada</button>
+    <div class="register">
+        <div class="container">
+            <h1>Registro de Asistencia</h1>
+            <p id="status">Estado actual: Sin registro</p>
+            <button id="checkInOut" class="check-in-out">Marcar Entrada</button>
+        </div>
         <div class="history">
-            <h3>Historial de Registros</h3>
+            <h2>Historial de Registros</h2>
             <ul id="historyList"></ul>
             <button id="clearHistory" class="clear-history">Borrar Historial</button>
+        </div>
+        <div class="logout">
+            <button id="sesionClose" class="logout-btn">Cerrar Sesión</button>
         </div>
     </div>
     <script src="../js/dEmpleado.js"></script>
