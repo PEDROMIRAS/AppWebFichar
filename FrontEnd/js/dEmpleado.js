@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("checkInOut");
     const historyList = document.getElementById("historyList");
     const clearHistoryButton = document.getElementById("clearHistory");
-    const logoutButton = document.getElementById("btn-logout");
+    const logoutButton = document.getElementById("sesionClose");
     let status = localStorage.getItem("attendanceStatus") || "Sin registro";
     let history = JSON.parse(localStorage.getItem("attendanceHistory")) || [];
 
@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     logoutButton.addEventListener("click", () => {
-        localStorage.removeItem("attendanceStatus");
         localStorage.removeItem("attendanceHistory");
         window.location.href = "../index.html";
     });
