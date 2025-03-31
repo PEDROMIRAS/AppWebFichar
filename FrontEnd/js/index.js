@@ -59,7 +59,7 @@ function mostrarAlerta(mensaje, error = false) {
 }
 // Boton iniciar sesion llevar a la pagina de inicio
 function iniciarSesion() {
-    window.location.href = "../html/inicio.html";
+    window.location.href = "/FrontEnd/html/inicio.html";
 }
 
 // Agregar evento al formulario en lugar del botón
