@@ -58,8 +58,7 @@ function mostrarAlerta(mensaje, error = false) {
     }, 3000);
 }
 // Boton iniciar sesion llevar a la pagina de inicio
-function iniciarSesion(e) {
-    e.preventDefault();
+function iniciarSesion() {
     window.location.href = "../html/inicio.html";
 }
 
