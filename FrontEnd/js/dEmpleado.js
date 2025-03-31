@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     logoutButton.addEventListener("click", () => {
-        localStorage.removeItem("attendanceHistory");
         window.location.href = "../index.html";
     });
 });
