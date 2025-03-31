@@ -1,18 +1,18 @@
-//Variables de informacion de inicio de sesion
+// Variables de información de inicio de sesión
 const dni = document.getElementById('dni');
 const contrasena = document.getElementById('password');
 
-//Boton de iniciar sesion
+// Botón de iniciar sesión
 const iniciarSesion = document.getElementById('btn-form');
 
-//Evento de click en el boton de iniciar sesion
+// Evento de click en el botón de iniciar sesión
 iniciarSesion.addEventListener('click', validarInicioSesion);
 
-//Validar los datos del formulario que existen en mi base de datos
+// Validar los datos del formulario
 function validarInicioSesion(e) {
     e.preventDefault();
 
-    //Eliminar alertas previas
+    // Eliminar alertas previas
     const alertaExistente = document.querySelector('.alerta');
     if (alertaExistente) alertaExistente.remove();
 
@@ -24,17 +24,29 @@ function validarInicioSesion(e) {
     // Si todo está correcto, enviar los datos
     enviarDatos();
 }
-//Enviar datos del formulario a la API (simulación con console.log)
+
+// Enviar datos y redirigir
 function enviarDatos() {
     const datos = {
         dni: dni.value.trim(),
         contrasena: contrasena.value.trim()
     };
+
     console.log('Datos enviados:', datos);
+
+    // Redirigir según el DNI
+    if (datos.dni === "admin123") {
+        // Redirigir al administrador
+        window.location.href = "dAdmin.html";
+    } else {
+        // Redirigir al empleado
+        window.location.href = "dEmpleado.html";
+    }
+
     mostrarAlerta('Inicio de sesión correcto');
 }
 
-//Mostrar alerta
+// Mostrar alerta
 function mostrarAlerta(mensaje, error = false) {
     const alerta = document.createElement('p');
     alerta.textContent = mensaje;
