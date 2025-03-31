@@ -8,15 +8,20 @@ body {
     margin: 0;
     background-color: whitesmoke;
 }
+
 .register {
-    height: 55%;
+    height: auto; /* Permite crecer hasta un límite */
+    min-height: 60%; /* Asegura espacio suficiente */
+    max-height: 80vh; /* Evita que crezca demasiado */
     width: 30%;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    overflow-y: auto;
 }
+
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -25,30 +30,49 @@ button {
     border-radius: 5px;
     margin-top: 10px;
 }
+
 .container {
-    margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
+
 .history {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    max-height: 150px; /* Limita la altura del historial */
+    overflow-y: auto; /* Habilita el scroll si es necesario */
+    padding: 5px;
+    border: 1px solid #ccc; /* Opcional, para visualizar límites */
+    border-radius: 5px;
 }
+
+.history ul {
+    padding: 0;
+    list-style: none; /* Quita los puntos de la lista */
+}
+
 .logout {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
+
 .check-in-out {
     background-color: #28a745;
     color: white;
 }
+
 .check-in-out:hover {
     background-color: #1e7e34; /* Verde más oscuro */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .clear-history {
     background-color: #dc3545;
     color: white;
 }
+
 .clear-history:hover {
     background-color: #a71d2a; /* Rojo más oscuro */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -58,6 +82,7 @@ button {
     background-color: #007bff;
     color: white;
 }
+
 .logout-btn:hover {
     background-color: #0056a1; /* Azul más oscuro */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
