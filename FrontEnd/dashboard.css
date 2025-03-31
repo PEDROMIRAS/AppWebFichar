@@ -6,9 +6,38 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.check-in-out {
+    background-color: #28a745;
+    color: white;
+}
+.check-in-out:hover {
+    background-color: #218838;
+}
+.clear-history {
+    background-color: #dc3545;
+    color: white;
+}
+.clear-history:hover {
+    background-color: #c82333;
+}
+.history {
+    margin-top: 20px;
+    text-align: left;
 }
