@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Web Fichar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>App Fichar 1.0</h1>
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>  
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password2">Repetir Contraseña:</label>
+                <input type="password" id="password2" name="password2" required>
+            </div>
+            <button id="btn-form" type="submit">Registrarse</button>
+            <button id="btn-login" type="button">Iniciar Sesión</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
