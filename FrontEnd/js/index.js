@@ -57,11 +57,14 @@ function mostrarAlerta(mensaje, error = false) {
         alerta.remove();
     }, 3000);
 }
-//Boton iniciar sesion llevar a la pagina de inicio
-function iniciarSesion() {
-    window.location.href = "inicio.html";
+// Boton iniciar sesion llevar a la pagina de inicio
+function iniciarSesion(e) {
+    e.preventDefault();
+    window.location.href = "../html/inicio.html";
 }
-//Boton registrarse llevar a la pagina de registro
-document.getElementById('btn-login').addEventListener('click', iniciarSesion);
+
 // Agregar evento al formulario en lugar del botón
 form.addEventListener('submit', validarFormulario);
+
+// Botón para iniciar sesión
+document.getElementById('btn-login').addEventListener('click', iniciarSesion);

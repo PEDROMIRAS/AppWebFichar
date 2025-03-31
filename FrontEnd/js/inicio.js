@@ -37,10 +37,10 @@ function enviarDatos() {
     // Redirigir según el DNI
     if (datos.dni === "admin123") {
         // Redirigir al administrador
-        window.location.href = "dAdmin.html";
+        window.location.href = "../html/dAdmin.html";
     } else {
         // Redirigir al empleado
-        window.location.href = "dEmpleado.html";
+        window.location.href = "../html/dEmpleado.html";
     }
 
     mostrarAlerta('Inicio de sesión correcto');
