@@ -2,12 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/Users/pedromiras/Documents/GitHub/AppWebFichar/BackEnd/backendAppfichar/src/backendappfichar/Utils.java</file>
-            <file>file:/Users/pedromiras/Documents/GitHub/AppWebFichar/BackEnd/backendAppfichar/src/backendappfichar/ConexionBD.java</file>
-            <file>file:/Users/pedromiras/Documents/GitHub/AppWebFichar/BackEnd/backendAppfichar/src/backendappfichar/UsuarioDAO.java</file>
-            <file>file:/Users/pedromiras/Documents/GitHub/AppWebFichar/BackEnd/backendAppfichar/src/backendappfichar/Usuario.java</file>
-            <file>file:/Users/pedromiras/Documents/GitHub/AppWebFichar/BackEnd/backendAppfichar/src/backendappfichar/FichajeDAO.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
